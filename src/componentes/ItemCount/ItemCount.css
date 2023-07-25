@@ -1,0 +1,10 @@
+.controles{
+    display: flex;
+    align-items: center;
+}
+.controles button{
+    margin: 5px;
+}
+.controles h4{
+    padding: 15px;
+}

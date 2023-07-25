@@ -1,0 +1,41 @@
+.navbar {
+    background: #222!important;
+    width: 100%;
+    box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky!important;
+    top: 0;
+    left: 0;
+}
+.navbar-brand h3 {
+    text-transform: uppercase;
+    padding: 22px 25px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.3rem!important;
+    color: #fff;
+    font-style: italic;
+}
+.navbar-icon {
+    color: rgba(34, 0, 124, 0.4);
+    float: left;
+    font-size: 42px;
+    position: relative;
+    left: 35px;
+    top: -2px;
+}
+
+.navbar-end button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Montserrat';
+    border-bottom: 1px solid #0D00A4;
+    padding: 3px;
+    margin: 0 10px;
+}

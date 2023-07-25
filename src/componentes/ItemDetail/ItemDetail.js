@@ -1,15 +1,16 @@
 
 import ItemCount from "../../componentes/ItemCount/ItemCount";
-
+import "./ItemDetail.css";
 
 const ItemDetail = ({id, nombre, categoria, descripcion, precio, stock}) => {
     return(
-        <article>
-            <header>
-                <h2>
+        <article className="card CardDetail">
+            <header className="card-header">
+                <h2 className="card-header-title">
                     {nombre}
                 </h2>
-                <section>
+            </header>
+                <section className="card-content">
                     <div className="DetailSection">
                         <b>Precio:</b> ${precio}
                     </div>
@@ -20,10 +21,10 @@ const ItemDetail = ({id, nombre, categoria, descripcion, precio, stock}) => {
                         <b>Descripción:</b> ${descripcion}
                     </div>
                 </section>
-                <footer>
+                <footer className="card-footer">
                 <ItemCount initial={1} stock={stock} onAdd={(cantidad) => console.log('Cantidad agregada', cantidad)}/>
                 </footer>
-            </header>
+            
         </article>
     )
 }

@@ -1,0 +1,7 @@
+.CardDetail{
+    width: 70%;
+    margin: 10% auto;
+}
+.card-footer{
+    display: flex;
+}

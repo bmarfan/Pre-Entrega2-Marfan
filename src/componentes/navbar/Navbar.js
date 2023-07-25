@@ -1,11 +1,16 @@
 import CartWidget from "../CartWidget/CartWidget";
 import { Link, NavLink } from "react-router-dom";
+import "./navbar.css";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+
 
 
 function NavBar(){
     return (
         <nav className="navbar">
             <div className="navbar-brand">
+            <div className="navbar-icon"><FontAwesomeIcon icon={faMoon} /></div>
                 <Link to="/"><h3 className="title is-4">HimaBlue Maker</h3></Link>
             </div>
             <div className="navbar-menu">
