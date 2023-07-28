@@ -1,0 +1,23 @@
+.CartItem{
+    background: #fff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.CartItem p{
+    width: 200px;
+    padding: 5px 10px;
+    border-right: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+}
+.cartname{
+    font-weight: bold;
+    background-color: #0096c7;
+    color: #fff;
+}
+.removeItem{
+    color: #0096c7;
+    font-size: 16px;
+    text-align: center;
+}

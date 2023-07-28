@@ -1,31 +1,51 @@
 import { useState, useEffect } from "react";
-import { getProductos, getProdutsByCategory } from "../../data";
-import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import ItemList from "../ItemList/ItemList";
+import { getDocs, collection, query, where } from "firebase/firestore";
+import { db } from "../../config/firebase";
+
 
 const ItemListContainer = ({ greeting }) => {
-    const [products, setProducts] = useState([])
-    const { categoryId } = useParams([])
+    const [products, setProducts] = useState([]);
+    const [filteredProducts, setFilteredProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const { categoryId } = useParams()
 
     useEffect(() => {
-        const asyncFunc = categoryId ? getProdutsByCategory: getProductos
+        setLoading(true)
 
+        const collectionRef = categoryId
+        ? query(collection(db, 'items'), where('categoria', '==', categoryId))
+        : collection(db, 'items')
 
-        asyncFunc(categoryId)
+        getDocs(collectionRef)
             .then(response => {
-                setProducts(response)
+                const productAdapted = response.docs.map(doc => {
+                    const data = doc.data()
+                    return { id: doc.id, ...data }
+                })
+                //lo guardamos en el esado
+                setProducts(productAdapted)
             })
             .catch(error => {
-                console.error(error)
+                console.log(error)
             })
-    }, [categoryId])
+            .finally(() => {
+                setLoading(false)
+            })
+        }, [categoryId])
 
-    return (
-        <div>
-            <h1>{greeting}</h1>
-            <ItemList products={products} />
-        </div>
-    )
-}
-
-export default ItemListContainer;
+        return (
+            <div>
+                <h1>{greeting}</h1>
+                {loading ? (
+        <p>Cargando...</p>
+      ) : (
+        <ItemList products={filteredProducts.length > 0 ? filteredProducts : products} />
+      )}
+            </div>
+        )
+    }
+    
+    export default ItemListContainer;

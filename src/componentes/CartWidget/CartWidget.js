@@ -1,12 +1,23 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 
-function CartWidget(){
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
+
+import './CartWidget.css';
+
+
+const CartWidget = () =>  {
+    const { cart } = useContext(CartContext)
+    const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
+        
     return(
-        <button className='button is-dark'>
-            <FontAwesomeIcon icon={faCartShopping} />
-            0
-        </button>
+        <Link to='/cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none' }}>
+             <FontAwesomeIcon icon={faCartShopping} />
+             <span>{totalQuantity}</span>
+             
+        </Link>
     )
 }
 

@@ -11,13 +11,16 @@ function Item({id, nombre, precio, stock, img}) {
                 </h2>
             </header>
             <div className="card-image">
-                <picture>
+                <picture className="picture">
                     <img src={img} alt={nombre} className="itemImg"/>
                 </picture>
             </div>
             <section>
-                <div className="ItemSection card-image">
+                <div className="ItemSection">
                     <b>Precio:</b> ${precio}
+                </div>
+                <div className="ItemSection">
+                    <b>Stock disponible:</b> {stock}
                 </div>
             </section>
             <footer className="ItemFooter card-footer">

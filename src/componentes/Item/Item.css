@@ -1,7 +1,14 @@
 .itemImg{
     width: 330px;
+    display: block;
+    position: relative;
+    top: -50px;
+}
+.picture{
+    width: 330px;
     height: 250px;
     margin: 10px auto;
+    overflow: hidden;
     display: block;
 }
 .CardItem{

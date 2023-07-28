@@ -8,3 +8,13 @@
 .controles h4{
     padding: 15px;
 }
+.button-cart{
+    position: relative;
+    border: #ddd 1px solid;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

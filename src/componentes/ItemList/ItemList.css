@@ -3,6 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    margin: 5% auto;
+    margin: auto;
     justify-content: start;
 }

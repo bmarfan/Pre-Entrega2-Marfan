@@ -1,7 +1,44 @@
 .CardDetail{
     width: 70%;
-    margin: 10% auto;
+    margin: 0% auto;
 }
 .card-footer{
     display: flex;
+}
+.card-text {
+    position: relative;
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: #000;
+    padding: 26px;
+    text-align: justify;
+}
+.card-content {
+    display: flex;
+}
+.DetailSection b{
+    display: block;
+}
+.car-flex{
+    display: flex;
+}
+.peque{
+    width: 40%;
+    padding: 10px;
+}
+.grande{
+    padding: 10px;
+}
+.OptionDetail{
+    position: relative;
+    border: #ddd 1px solid;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card-header-title{
+    text-transform: uppercase;
 }

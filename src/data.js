@@ -1,4 +1,4 @@
-const productos = [
+/*const productos = [
     {
         id: "1",
         nombre: "Cosplay personalizado",
@@ -6,10 +6,7 @@ const productos = [
         categoria: "personalizado",
         stock: 1,
         img: "https://images2.imgbox.com/10/a8/mUYhYg8i_o.png",
-        desripcion: `No dude en enviarnos un mensaje si desea encargar un artículo, envíe imágenes detalladas de lo que desea para que podamos darle un precio, si hay un momento específico para el que lo necesita y si tiene un presupuesto específico, para que podamos ajustar el precio lo mejor que podamos.
-        ¡No trabajamos con tamaños específicos! ¡Hacemos todo a sus medidas! Así que, por favor, ten en cuenta que tendrás que medirte a ti mismo.
-        
-        Tampoco hacemos atrezzo ni pelucas, solo podemos hacer la ropa.`,
+        desripcion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
     },
     {
         id: "2",
@@ -18,14 +15,7 @@ const productos = [
         categoria: "genshin",
         stock: 2,
         img: "https://images2.imgbox.com/10/a8/mUYhYg8i_o.png",
-        descripcion: `Incluye:
-        -Kimono exterior
-        -Mangas negras
-        -Pantalones cortos
-        -Capa inferior/falda blanca
-        -Visión eléctrica frontal y trasera
-        -Medias altas hasta la rodilla
-        -Pieza de cuello`,
+        descripcion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
     }
     ,
     {
@@ -35,13 +25,7 @@ const productos = [
         categoria: "genshin",
         stock: 2,
         img: "https://images2.imgbox.com/10/a8/mUYhYg8i_o.png",
-        descripcion: `Incluye: 
-        -Piezas de hombro
-        -Collar
-        -Top blanco y marrón
-        -Debajo de la falda
-        -Mangas
-        -Obi + falda`,
+        descripcion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
     }
     ,
     {
@@ -51,7 +35,7 @@ const productos = [
         categoria: "patrones",
         stock: 10,
         img: "https://images2.imgbox.com/10/a8/mUYhYg8i_o.png",
-        descripcion: `Patrones digitales del cosplay de Keqing de Genshin Impact.` ,
+        descripcion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` ,
     }
     ,
     {
@@ -61,7 +45,7 @@ const productos = [
         categoria: "patrones",
         stock: 10,
         img: "https://images2.imgbox.com/10/a8/mUYhYg8i_o.png",
-        descripcion: `Patrones digitales del cosplay de Raiden Shogun de Genshin Impact.`,
+        descripcion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
     }
 ]
 
@@ -87,3 +71,4 @@ export const getProdutosById = (productoId) => {
         }, 500)
     })
 }
+*/

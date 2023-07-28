@@ -1,0 +1,25 @@
+.carrito{
+    margin: auto;
+    width: 70%;
+    padding: 10% 20px;
+}
+.carrito h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-weight: 900;
+}
+.carrito h3{
+    padding: 20px;
+    text-transform: uppercase;
+}
+.Option{
+    background-color: #0096c7;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border: rgba(0,0,0,.1) 1px solid;
+    font-size: 12px;
+    margin: 10px;
+    text-transform: uppercase;
+}
